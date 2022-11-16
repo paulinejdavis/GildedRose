@@ -42,4 +42,12 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toBe(50);
   });
 
+  it('Sulfuras never has to be sold or decreases in quality', function() {
+    const gildedRose = new Shop([new Item('Sulfuras, Hand of Ragnaros', 10, 80)]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toBe('Sulfuras, Hand of Ragnaros');
+    expect(items[0].sellIn).toBe(10);
+    expect(items[0].quality).toBe(80);
+  });
+
 });
