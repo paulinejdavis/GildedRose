@@ -50,4 +50,12 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toBe(80);
   });
 
+  it('Backstage passes increases in quality as its sellIn value approaches', function() {
+    const gildedRose = new Shop([new Item('Backstage passes to a TAFKAL80ETC concert', 15, 10)]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toBe('Backstage passes to a TAFKAL80ETC concert');
+    expect(items[0].sellIn).toBe(14);
+    expect(items[0].quality).toBe(11);
+  });
+
 });
