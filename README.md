@@ -25,3 +25,6 @@ To generate test coverage report
 ```
 npm run test:coverage
 ```
+
+## An example of the coverage of the test code `npm run test`:
+
