@@ -1,0 +1,26 @@
+{
+  "name": "gildedrose",
+  "version": "1.0.0",
+  "description": "This is the Gilded Rose kata in JavaScript with Jest",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinejdavis/GildedRose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulinejdavis/GildedRose/issues"
+  },
+  "homepage": "https://github.com/paulinejdavis/GildedRose#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
